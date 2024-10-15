@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 //    double balance
 // ) {}
 
-// BankAccount는 proxy객체가 아니므로(spring이 관리하지 않는 도메인 객체) 
+// record BankAccount는 proxy객체가 아니므로(spring이 관리하지 않는 도메인 객체) 
 // @PreAuthrize를 사용할 수 없다. class로 변경 후 
 // 서비스쪽에서 @AuthorizeReturnObject 를 사용해야 한다.
 // PostReadBankAccount 참조

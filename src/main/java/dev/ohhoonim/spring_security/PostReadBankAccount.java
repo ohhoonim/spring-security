@@ -9,7 +9,7 @@ import org.springframework.security.authorization.method.AuthorizeReturnObject;
 @Retention(RetentionPolicy.RUNTIME)
 // @PostAuthorize("returnObject?.owner == authentication?.name or hasRole('ACCOUNTANT')")
 // 위에거를 아래거로 대체
-@PostAuthrize("@authz.check(authentication, returnObject)")
+@PostAuthorize("@authz.check(authentication, returnObject)")
 @AuthorizeReturnObject
 public @interface PostReadBankAccount {
     
